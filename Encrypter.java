@@ -44,11 +44,13 @@ class Encrypter {
         }
 
         String imageAsString = Base64.getEncoder().encodeToString(bytes);
-        return imageAsString.substring(r.nextInt(0,imageAsString.length()-passwordLength),passwordLength);
+        int randomIndex = r.nextInt(0,imageAsString.length()-passwordLength);
+        return imageAsString.substring(randomIndex,randomIndex + passwordLength);
     }
 
     public String encrypt() {
         // code for encrypting the generated password using encryption seed and storing it
+    // maybe store the ramndomIndex at the end of the password and encrypt it too so that the program knows where to find it
         return null; 
     }
 

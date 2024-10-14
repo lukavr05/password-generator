@@ -12,19 +12,19 @@ class Encrypter {
     public Encrypter(String i, int l) {
         imgURL = i;
         passwordLength = l;
-        inputSeed = null;
+        index = null;
         password = null;
     }
 
     public Encrypter(String i) {
         imgURL = i;
         passwordLength = 12;
-        inputSeed = null;
+        index = null;
         password = null;
     }
 
     public String getPassword() { return password; }
-    public String getInputSeed() { return inputSeed; }
+    public String getIndex() { return index; }
     public String getImageURL() { return imgURL; }
     public int getPasswordLength() { return passwordLength; }
 
@@ -50,7 +50,7 @@ class Encrypter {
 
     public String encrypt() {
         // code for encrypting the generated password using encryption seed and storing it
-    // maybe store the ramndomIndex at the end of the password and encrypt it too so that the program knows where to find it
+    // maybe store the randomIndex at the end of the password and encrypt it too so that the program knows where to find it
         return null; 
     }
 
